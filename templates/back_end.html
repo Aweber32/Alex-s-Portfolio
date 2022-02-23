@@ -1,0 +1,29 @@
+﻿ {% extends "base.html" %}
+        {% block content %}
+<div class="row" style="margin-bottom:15px;">
+    <div class="col justify-content-center">
+        <img id="front_end_logo" src="{{ url_for('static', filename='python_logo.png') }}" />
+    </div>
+    <div class="col text-center">
+        <h1>Python</h1>
+        <p>My personal favorite language to use I have used Python for most of my personal projects. In terms of Web-Development I have used both Flask and Django frameworks. Below is projects I have completed at UofL, for more examples look at my personal projects tab.</p><br /><br />
+        <h3>View Samples:</h3>
+        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="https://github.com/Aweber32/Portfolio_projects/tree/Python-Code" target="_blank">Click Here</a></button>
+
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col justify-content-center">
+        <img id="front_end_logo" src="{{ url_for('static', filename='C#_img.png') }}" />
+    </div>
+    <div class="col text-center">
+        <h1>C#</h1>
+        <p>C# is my second favorite language to use, Below I have attached a link to a repository with projects I have completed throughout my time at UofL</p><br /><br />
+        <h3>View Samples:</h3>
+        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="https://github.com/Aweber32/Portfolio_projects/tree/C%23-Code" target="_blank">Click Here</a></button>
+
+    </div>
+</div>
+
+        {% endblock %}

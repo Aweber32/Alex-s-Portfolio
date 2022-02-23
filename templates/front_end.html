@@ -1,0 +1,16 @@
+﻿ {% extends "base.html" %}
+        {% block content %}
+<div class="row">
+    <div class="col justify-content-center">
+        <img id="front_end_logo" src="{{ url_for('static', filename='front_end_img.jpg') }}" />
+    </div>
+    <div class="col text-center">
+        <h1>HTML/CSS/Javascript</h1>
+        <p>Below I have attached a link to a repository with projects I have completed throughout my time at UofL. For more examples check out my personal projects tab.</p><br /><br />
+        <h3>View Samples:</h3>
+        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="https://github.com/Aweber32/Portfolio_projects/tree/FrontEnd-Code" target="_blank">Click Here</a></button>
+
+    </div>
+</div>
+
+        {% endblock %}
