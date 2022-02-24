@@ -42,6 +42,23 @@ def back_end():
 def powerBI():
     return render_template('powerBI.html')
 
+#Personal Projects
+@app.route('/Old_Bridge')
+def old_bridge():
+    return render_template('oldbridge.html')
+
+@app.route('/Smart_Mirror')
+def smart_mirror():
+    return render_template('smart_mirror.html')
+
+@app.route('/Eatz')
+def eatz():
+    return render_template('eatz.html')
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
 
 
 if __name__ == '__main__':

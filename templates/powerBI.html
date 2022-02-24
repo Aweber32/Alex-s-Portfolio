@@ -4,12 +4,13 @@
     <div class="col justify-content-center">
         <img id="front_end_logo" src="{{ url_for('static', filename='powerBI_img.jfif') }}" />
     </div>
-    <div class="col text-center">
-        <h1>PowerBI</h1>
+    <div class="col">
+        <h1 class="text-center">PowerBI</h1>
         <p>While at The Untitled Firm I was exposed to and worked with PowerBI. I built dashboards with data from Facebook Ads as well as many other ditigal marketing platforms. The dashboard below is an example I made to practice.</p><br />
-        <h3>Download Example:</h3>
-        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="{{ url_for('static', filename='powerBI_IEP.pbix') }}" target="_blank">Click Here</a></button>
-
+        <div class="text-center">
+            <h3>Download Example:</h3>
+            <button id="button" type="button" class="btn btn-secondary btn-lg text-center"><a style="color:white;" href="{{ url_for('static', filename='powerBI_IEP.pbix') }}" target="_blank">Click Here</a></button>
+        </div>
     </div>
 </div>
 
