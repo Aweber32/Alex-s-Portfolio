@@ -10,7 +10,7 @@
 </head>
 <header id="intro_header">
     <div class="container-fluid" id="nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Alex's Portfolio |</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
                                 Contact
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Email / LinkedIN</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('contact') }}">Email / LinkedIN</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -75,10 +75,7 @@
         </nav>
     </div>
     <div class="container">
-        <div class="row align-items-center">
-            <canvas class="text-center" id="viewport" width="200" height="200"></canvas>
-            <script src=></script>
-        </div>
+       
     </div>
 </header>
 <body>
@@ -90,8 +87,8 @@
             <div class="col">
                 <h1 class="text-center">About Me</h1>
                 <p class="text-center">Orginally From Robinson IL, I came to the University of Louisville to experience a new place and what it had to offer! During my 4 years of undergrad I was able to experience everything this city and school had to offer!</p>
-                <p><h3>Major:</h3>Computer Information Systems Concentration in Buisness Process Management</p>
-                <p><h3>Minor:</h3>Finance</p>
+                <h3>Major:</h3><p>Computer Information Systems Concentration in Buisness Process Management</p>
+                <h3>Minor:</h3><p>Finance</p>
             </div>
         </div>
     </div>
