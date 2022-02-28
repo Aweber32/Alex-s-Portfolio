@@ -29,6 +29,10 @@ header {
     margin: 50px;
 }
 
+#about_me {
+    margin: 50px;
+}
+
 #headshot {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -88,17 +92,22 @@ footer {
 }
 
 @media (max-width: 1000px) {
+    a, #nav_header {
+        font-size: 35px;
+    }
+
     #intro_header {
         height: 50vh;
     }
 
-    #intro {
-        height: 50vh;
-        margin: 0px;
+    header {
+        height: 40vh;
     }
 
-    header {
-        height: 30vh;
+    #about_me {
+        margin:0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
