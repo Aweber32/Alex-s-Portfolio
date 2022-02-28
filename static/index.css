@@ -2,10 +2,6 @@
     font-size: 20px;
 }
 
-.navbar-custom {
-   
-}
-
 #intro_header {
     background: white url(https://cdn.wallpapersafari.com/40/29/eUiwIg.png) fixed;
     border: 1px solid black;
@@ -91,13 +87,19 @@ footer {
     background-color: gray;
 }
 
-@media only screen and (max-width: 480px) {
-    .navbar-custom {
-        height: 500px;
+@media (max-width: 1000px) {
+    #intro_header {
+        height: 50vh;
     }
 
-    a {
-        font-size: 20px;
+    #intro {
+        height: 50vh;
+        margin: 0px;
     }
+
+    header {
+        height: 30vh;
+    }
+
 }
 
