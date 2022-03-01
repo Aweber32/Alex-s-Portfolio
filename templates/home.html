@@ -93,9 +93,46 @@
         </div>
     </div>
     <div id="background_scroll_space_landing_page"></div>
-    <div class="container">
-        <div class="row align-items-center">
-            somethings going here
+    <div class="container py-3" id="carousel_container">
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="carousel_item">
+                        <img src="{{ url_for('static', filename= 'Meandamber.jpg') }}" class="d-block w-100" alt="raisered">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RaiseRED</h5>
+                            <p>In 2020 I served as a team leader for raiseRED a orginiztion at UofL that raises money for the Norton Children's Cancer Institute and the University of Louisville School of Medicine's Department of Pediatrics' Division of Hematology and Oncology. In the past 7 years we have raised over 3 MILLION DOLLARS benefitting research and patient needs.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel_item">
+                        <img src="{{ url_for('static', filename= 'homecoming.jpg') }}" class="d-block w-100" alt="homecoming">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Homecoming</h5>
+                            <p>Me and then president Dr. Bendapudi at the homecoming game football game in the fall of 2021 where I was voted to the Homecoming Court. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel_item">
+                        <img src="{{ url_for('static', filename= 'sos.jpg') }}" class="d-block w-100" alt="sos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Student Orientation Staff</h5>
+                            <p>In the fall of 2019 I served as a member of the Student Orientation Staff. In this role I mentored incoming students and helped them navagate through the 2-day orientation and into the school year.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>    
         </div>
     </div>
 </body>

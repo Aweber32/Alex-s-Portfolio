@@ -2,6 +2,12 @@
     font-size: 20px;
 }
 
+#carousel_container {
+    width: 700px;
+}
+
+
+
 #intro_header {
     background: white url(https://cdn.wallpapersafari.com/40/29/eUiwIg.png) fixed;
     border: 1px solid black;
@@ -66,6 +72,14 @@ header {
     width: 500px;
 }
 
+#eatz_logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 600px;
+    width: 350px;
+}
+
 #background_scroll_space {
     background: white url(https://www.mewallpaper.com/thumbnail/games/8356-coding-background-free-photo-wallpaper.jpg) fixed;
     border: 1px solid black;
@@ -108,6 +122,14 @@ footer {
         margin:0px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    #eatz_logo {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 2px;
+        height: 500px;
+        width: 250px;
     }
 
 }
