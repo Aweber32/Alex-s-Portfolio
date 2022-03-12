@@ -1,71 +1,37 @@
-// JavaScript source code
-// The function gets called when the window is fully loaded
-var canvas;
-var ctx;
-var dx = 5;
-var dy = 5;
-var x = 100;
-var y = 50;
-var WIDTH = 200;
-var HEIGHT = 200;
-var img = new Image(50, 50);
-img.src = 'static/letterA.png'
+var i = 0;
+var a = 0
+var b = 0
+var txt1 = 'Hi,'; /* The text */
+var txt2 = 'I\'m Alex,';
+var txt3 = 'Welcome to My Portfolio';
+var speed = 100; /* The speed/duration of the effect in milliseconds */
 
-function circle(x, y, img) {
-    ctx.drawImage(img, x, y);
-}
-
-function rect(x, y, w, h) {
-    ctx.beginPath();
-    ctx.rect(x, y, w, h);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
-}
-
-function clear() {
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
-}
-
-function init() {
-    canvas = document.getElementById("viewport");
-    ctx = canvas.getContext("2d");
-    return setInterval(draw, 10);
-}
-
-function doKeyDown(evt) {
-    switch (evt.keyCode) {
-        case 38:  /* Up arrow was pressed */
-            if (y - dy > 0) {
-                y -= dy;
-            }
-            break;
-        case 40:  /* Down arrow was pressed */
-            if (y + dy < HEIGHT) {
-                y += dy;
-            }
-            break;
-        case 37:  /* Left arrow was pressed */
-            if (x - dx > 0) {
-                x -= dx;
-            }
-            break;
-        case 39:  /* Right arrow was pressed */
-            if (x + dx < WIDTH) {
-                x += dx;
-            }
-            break;
+window.onload = function typeWriter() {
+    if (i < txt1.length) {
+        document.getElementById("header_text1").innerHTML += txt1.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
     }
 }
 
-function draw() {
-    clear();
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
-    ctx.strokeStyle = "black";
-    rect(0, 0, WIDTH, HEIGHT);
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
-    circle(x, y, 10);
+function typeWriter2() {
+    if (a < txt2.length) {
+        document.getElementById("header_text2").innerHTML += txt2.charAt(a);
+        a++;
+        setTimeout(typeWriter2, speed);
+    }
 }
 
-init();
-window.addEventListener('keydown', doKeyDown, true);
+function typeWriter3() {
+    if (b < txt3.length) {
+        document.getElementById("header_text3").innerHTML += txt3.charAt(b);
+        b++;
+        setTimeout(typeWriter3, speed);
+    }
+}
+
+
+
+
+setTimeout(typeWriter2, 650);
+setTimeout(typeWriter3, 2000);

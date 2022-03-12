@@ -1,4 +1,17 @@
-﻿p {
+﻿#tags {
+    font-family: 'Brush Script MT', cursive;
+    color:deepskyblue;
+}
+
+.header_text {
+    font-family: 'Lucida Bright';
+    font-size: 60px;
+    color: ghostwhite;
+}
+
+
+
+p {
     font-size: 20px;
 }
 
@@ -130,6 +143,15 @@ footer {
         padding: 2px;
         height: 500px;
         width: 250px;
+    }
+
+    #nav {
+        position: fixed;
+        z-index:1;
+    }
+
+    #tags_div {
+        margin-top: 5vh;
     }
 
 }
