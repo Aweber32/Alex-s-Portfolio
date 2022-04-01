@@ -38,6 +38,10 @@ def front_end():
 def back_end():
     return render_template('back_end.html')
 
+@app.route('/Development_Project')
+def dev_project():
+    return render_template('development_project.html')
+
 @app.route('/PowerBI')
 def powerBI():
     return render_template('powerBI.html')

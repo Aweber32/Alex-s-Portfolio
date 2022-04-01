@@ -36,7 +36,7 @@ header {
 }
 
 #button {
-    width: auto;
+    width: initial;
 }
 
 #nav {
@@ -128,7 +128,7 @@ footer {
     }
 
     header {
-        height: 40vh;
+        height: 35vh;
     }
 
     #about_me {
@@ -152,6 +152,14 @@ footer {
 
     #tags_div {
         margin-top: 5vh;
+    }
+
+    #background_scroll_space {
+        height: 35vh;  
+    }
+
+    #background_scroll_space_landing_page {
+        height: 18vh;
     }
 
 }
