@@ -2,13 +2,16 @@
     {% block content %}
 <div class="row">
     <div class="col">
-        <h1 class="text-center">Email / LinkedIN</h1>
+        <h1 class="text-center">Email / LinkedIN / Resume</h1>
         <p class="text-center">Email is prefered for direct communication</p>
         <h1>LinkedIN</h1><br />
-        <a href="https://linkedin.com/in/alex-weber-9973b7173" target="_blank">View Profile</a>
+                         <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="https://linkedin.com/in/alex-weber-9973b7173" target="_blank">View Profile</a></button>
         <hr />
         <h1>Email</h1><br />
-        <a href="mailto:alexweber12899@gmail.com">alexweber12899@gmail.com</a>
+        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="mailto:alexweber12899@gmail.com" target="_blank">alexweber12899@gmail.com</a></button>
+        <hr />
+        <h1>Resume</h1><br />
+        <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">View Resume</a></button>
     </div>
 </div>
     {% endblock %}
