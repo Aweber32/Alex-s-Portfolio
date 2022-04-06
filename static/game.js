@@ -6,7 +6,7 @@ var txt2 = 'I\'m Alex,';
 var txt3 = 'Welcome to My Portfolio';
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 
-window.onload = function typeWriter() {
+function typeWriter() {
     if (i < txt1.length) {
         document.getElementById("header_text1").innerHTML += txt1.charAt(i);
         i++;
@@ -32,6 +32,6 @@ function typeWriter3() {
 
 
 
-
-setTimeout(typeWriter2, 650);
-setTimeout(typeWriter3, 2000);
+setTimeout(typeWriter, 620);
+setTimeout(typeWriter2, 1720);
+setTimeout(typeWriter3, 3000);
