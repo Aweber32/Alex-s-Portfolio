@@ -29,6 +29,11 @@ def visio_databaseD():
 def case_writeups():
     return render_template('case_writeups.html')
 
+@app.route('/Strategic_Assesment')
+def strategic_assesment():
+    return render_template('Strategic_assesment.html')
+
+
 #Languages / Software
 @app.route('/Front_end_languages')
 def front_end():
@@ -62,6 +67,10 @@ def eatz():
 @app.route('/portfolio')
 def portfolio():
     return render_template('portfolio.html')
+
+@app.route('/Weber_Title')
+def weber_title():
+    return render_template('WeberTitle.html')
 
 #Contact
 @app.route('/contact')

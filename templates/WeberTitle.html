@@ -1,0 +1,19 @@
+﻿{% extends "base.html" %}
+        {% block content %}
+<div class="row">
+    <div class="col justify-content-center">
+        <img id="front_end_logo" src="{{ url_for('static', filename='webertitle.JPG') }}" alt="Weber Title" />
+    </div>
+    <div class="col">
+        <h1 class="text-center">Weber Title Inc.</h1><br />
+        <p>Located in Robinson and Newton Illinois, Weber Title has provided title services to both the Crawford and Jasper counties for over 25 years. In the spring of 2022 I was hired to develop a website and a feature that allows users to submit an order and send the order to the correct email based on office location. Developed in Wordpress I was able to utlize plug-ins and custom code to create the end result!</p><br />
+        <h3>Tech Stack:</h3>
+        <p>Custom HTML, CSS, Javascript, Wordpress</p><br />
+        <div class="text-center">
+            <h3>See Website:</h3>
+            <button id="button" type="button" class="btn btn-secondary btn-lg"><a style="color:white;" href="https://webertitle.com/" target="_blank">Click Here</a></button>
+        </div>
+    </div>
+</div>
+
+        {% endblock %}
