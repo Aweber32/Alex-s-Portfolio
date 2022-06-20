@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\static",
+    "\\templates"
   ],
+  "SelectedNode": "\\static\\humana_logo.png",
   "PreviewInSolutionExplorer": false
 }
